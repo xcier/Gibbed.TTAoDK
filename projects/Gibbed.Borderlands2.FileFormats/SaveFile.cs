@@ -130,7 +130,7 @@ namespace Gibbed.Borderlands2.FileFormats
                     innerCompressedData.WriteValueS32(0, Endian.Big);
                 }
 
-                innerCompressedData.WriteString("WSG");
+                innerCompressedData.WriteString("PSG");
                 innerCompressedData.WriteValueU32(2, endian);
                 innerCompressedData.WriteValueU32(hash, endian);
                 innerCompressedData.WriteValueS32(innerUncompressedBytes.Length, endian);
@@ -208,7 +208,7 @@ namespace Gibbed.Borderlands2.FileFormats
                     : outerData.ReadValueU32(Endian.Big);
 
                 var magic = outerData.ReadString(3);
-                if (magic != "WSG")
+                if (magic != "PSG")
                 {
                     throw new SaveCorruptionException("invalid magic");
                 }
