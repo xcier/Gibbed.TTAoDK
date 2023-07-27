@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net47</TargetFramework>
-    <AssemblyTitle>Gibbed's Borderlands 2 Save Editor</AssemblyTitle>
+    <AssemblyTitle>ProtoGibbed TTAoDK Save Editor</AssemblyTitle>
     <Company>Gibbed</Company>
     <Authors>Gibbed</Authors>
     <Description>http://gib.me/</Description>
